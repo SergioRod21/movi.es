@@ -71,19 +71,31 @@ header {
 }
 
 .main-container {
-
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: repeat(3, 200px);
+    grid-template-areas: "sidebar films-container"
+                          "sidebar films-container"
+                          "sidebar films-container";
 }
 
 .sidebar {
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    margin-top: -10px;
 
 }
 
-.film-container {
-
+.films-container {
+    grid-area: films-container;
+    background-color: blue;
 }
 
 .film-information {
 
 }
+
 
 
