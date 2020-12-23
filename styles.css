@@ -70,13 +70,20 @@ header {
    height: 12.5px;
 }
 
-.side-bar-pages {
-    margin-top: -10px;
-    background: #FE6464;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 90px;
+.main-container {
+
+}
+
+.sidebar {
+
+}
+
+.film-container {
+
+}
+
+.film-information {
+
 }
 
 
