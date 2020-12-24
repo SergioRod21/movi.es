@@ -1,14 +1,16 @@
 body {
     padding: 0;
-    margin: 10;
+    margin: 0;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: red;
+    background: #FFFFFF;
     height: 100px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.69);
 }
 
 .page-logo {
@@ -22,6 +24,10 @@ header {
     margin-left: 10px;
 }
 
+h1 {
+    color: rgb(203, 68, 73);
+}
+
 .search-bar {
     justify-self: center;
     align-self: center;
@@ -33,7 +39,7 @@ header {
     height: 35px;
     border-radius: 5px;
     outline: none;
-    border: 2px solid white;
+    border: 0.1px solid black;
 }
 
 .search-bar input::placeholder {
@@ -68,9 +74,104 @@ header {
    height: 12.5px;
 }
 
-.side-bar-pages {
+.main-container {
     display: grid;
-    height: 100vh;
-    width: 25px;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 60px 200px 60px 200px 60px 200px;
+    grid-template-areas: "sidebar title1"
+                         "sidebar films-container"
+                         "sidebar title2"
+                          "sidebar films-container2"
+                          "sidebar title3"
+                          "sidebar films-container3";
 }
+
+.sidebar {
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    margin-top: -10px;
+}
+
+.film-information {
+    width: 350px;
+    height: 200px;
+    background-image: url('images/pets.jpg');
+    background-size: cover;
+    display: flex;
+    /* flex-direction: column;
+    align-items: flex-end;  */
+}
+
+
+.films-container {
+    margin-left: 30px;
+    grid-area: films-container;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    justify-content: center;
+}
+
+.films-container2 {
+    margin-left: 30px;
+    grid-area: films-container2;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    justify-content: center;
+}
+.films-container3 {
+    margin-left: 30px;
+    grid-area: films-container3;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    justify-content: center;
+}
+
+.title1 {
+    grid-area: title1;
+    margin-left: 40px;
+}
+
+.title2 {
+    grid-area: title2;
+    margin-left: 40px;
+}
+
+.title3 {
+    grid-area: title3;
+    margin-left: 40px;
+}
+
+.film-details:hover {
+    display: none;
+}
+
+.film-details {
+    height: 100px;
+    background-color:rgba(203, 68, 73, 0.7);
+    align-self: flex-end;
+    border-top: 1px solid #CB4449;
+}
+
+
+.film-details h2 {
+    margin-top: -1px;
+    margin-left: 8px;
+    color: white;
+    font-weight: 700;
+}
+
+.film-details p {
+    color: white;
+    margin-top: -10px;
+    margin-left: 10px;
+}
+
+
+
+
 
