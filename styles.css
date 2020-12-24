@@ -73,10 +73,13 @@ header {
 .main-container {
     display: grid;
     grid-template-columns: 100px 1fr;
-    grid-template-rows: repeat(3, 200px);
-    grid-template-areas: "sidebar films-container"
-                          "sidebar films-container"
-                          "sidebar films-container";
+    grid-template-rows: 60px 200px 60px 200px 60px 200px;
+    grid-template-areas: "sidebar title1"
+                         "sidebar films-container"
+                         "sidebar title2"
+                          "sidebar films-container2"
+                          "sidebar title3"
+                          "sidebar films-container3";
 }
 
 .sidebar {
@@ -85,16 +88,54 @@ header {
     flex-direction: column;
     background-color: red;
     margin-top: -10px;
-
 }
+
+.film-information {
+    width: 350px;
+    height: 200px;
+    background-image: url('images/pets.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
 
 .films-container {
     grid-area: films-container;
     background-color: blue;
+    height: 150px;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    justify-content: center;
 }
 
-.film-information {
+.films-container2 {
+    grid-area: films-container2;
+    background-color: blue;
+    height: 150px;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    justify-content: center;
+}
+.films-container3 {
+    grid-area: films-container3;
+    background-color: blue;
+    height: 150px;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    justify-content: center;
+}
 
+.title1 {
+    grid-area: title1;
+}
+
+.title2 {
+    grid-area: title2;
+}
+
+.title3 {
+    grid-area: title3;
 }
 
 
