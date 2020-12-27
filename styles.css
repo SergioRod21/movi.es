@@ -11,6 +11,8 @@ header {
     height: 100px;
     margin-bottom: 10px;
     box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.69);
+    font-size: 300;
+    font-family: 'Roboto', sans-serif;
 }
 
 .page-logo {
@@ -90,9 +92,41 @@ h1 {
     grid-area: sidebar;
     display: flex;
     flex-direction: column;
-    background-color: red;
+    background-color: #F96B67;
     margin-top: -10px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font
 }
+
+.sidebar-part1 .home img {
+    margin-top: 10px;
+}
+
+.sidebar-part1 .home p {
+    margin-left: 10px;    
+}
+
+.sidebar-part1 img {
+    margin-left: 10px;
+    width: 40px;
+    align-self: center;
+    justify-content: center;
+    justify-self: center;
+    margin-bottom: -10px;
+}
+
+.sidebar-part2 img {
+    margin-left: 3px;
+    width: 40px;
+    align-self: center;
+    justify-content: center;
+    justify-self: center;
+    margin-bottom: -10px;
+}
+
 
 .film-information {
     width: 350px;
@@ -135,18 +169,21 @@ h1 {
     grid-area: title1;
     margin-left: 40px;
     margin-top: 30px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .title2 {
     grid-area: title2;
     margin-left: 40px;
     margin-top: 35px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .title3 {
     grid-area: title3;
     margin-left: 40px;
     margin-top: 35px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .film-details:hover {
